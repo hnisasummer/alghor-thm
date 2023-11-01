@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="rcrdq"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-28 10:13:48 &#214;S"/>
+        <attribute name="created" value="cmNyZHE7TUFVTUNIOzIwMjMtMTAtMjc7MDE6MDI6NTYgw5ZTOzIzOTg="/>
+        <attribute name="edited" value="cmNyZHE7TUFVTUNIOzIwMjMtMTAtMjg7MTA6MTM6NDggw5ZTOzY7MjUxNQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="A1 basla&#13;&#10;A2 oku a,poz&#305;t&#305;f,negat&#305;f,notr&#13;&#10;A3 poz&#305;t&#305;f=0&#13;&#10;A4 negat&#305;f=0&#13;&#10;A5 notr=0&#13;&#10;A6 a=1&#13;&#10;A7 a&lt;10 ,a=a+1&#13;&#10;A8 oku girdi&#13;&#10;A9 eger girdi&gt;0 ise poz&#305;t&#305;f=poz&#305;t&#305;f+1&#13;&#10;A10  deg&#305;lse eger girdi&lt;0 ise negat&#305;f=negatif+1&#13;&#10;A11   deg&#305;lse notr=notr+1&#13;&#10;A12 d&#246;n A7&#13;&#10;A13 yaz negat&#305;f ,poz&#305;t&#305;f ,n&#246;tr&#13;&#10;A14 bitir"/>
+            <declare name="a, poz&#305;t&#305;f, negat&#305;f, girdi, notr" type="Integer" array="False" size=""/>
+            <assign variable="poz&#305;t&#305;f" expression="0"/>
+            <assign variable="negat&#305;f" expression="0"/>
+            <assign variable="notr" expression="0"/>
+            <assign variable="a" expression="1"/>
+            <for variable="a" start="1" end="10" direction="inc" step="1">
+                <output expression="&quot;say&#305; g&#305;rn&#305;z&quot;" newline="True"/>
+                <input variable="girdi"/>
+                <if expression="girdi&gt;0">
+                    <then>
+                        <assign variable="poz&#305;t&#305;f" expression="poz&#305;t&#305;f+1"/>
+                    </then>
+                    <else/>
+                </if>
+                <if expression="girdi&lt;0">
+                    <then>
+                        <assign variable="negat&#305;f" expression="negat&#305;f+1"/>
+                    </then>
+                    <else/>
+                </if>
+                <if expression="girdi==0">
+                    <then>
+                        <assign variable="notr" expression="notr+1"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="&quot;negat&#305;f say&#305;s&#305;&quot; &amp; negat&#305;f" newline="True"/>
+            <output expression="&quot; poz&#305;t&#305;f say&#305;s&#305; &quot; &amp; poz&#305;t&#305;f" newline="True"/>
+            <output expression="notr" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

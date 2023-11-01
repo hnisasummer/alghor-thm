@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="rcrdq"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-28 05:31:36 &#214;S"/>
+        <attribute name="created" value="cmNyZHE7TUFVTUNIOzIwMjMtMTAtMjY7MDM6MzI6MjQgw5ZTOzIzOTc="/>
+        <attribute name="edited" value="cmNyZHE7TUFVTUNIOzIwMjMtMTAtMjg7MDU6MzE6MzYgw5ZTOzQ7MjUxNA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="A1 basla&#13;&#10;A2  oku sayac&#13;&#10;A3 sayac=500&#13;&#10;A4 sayac&gt;=100&#13;&#10;A5 sayac=sayac-1&#13;&#10;A6 d&#246;n A4"/>
+            <declare name="sayac" type="Integer" array="False" size=""/>
+            <for variable="sayac" start="500" end="100" direction="dec" step="1">
+                <output expression="&quot;&quot; &amp; sayac" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

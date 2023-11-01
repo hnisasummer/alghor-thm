@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="rcrdq"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-28 11:16:15 &#214;S"/>
+        <attribute name="created" value="cmNyZHE7TUFVTUNIOzIwMjMtMTAtMjg7MTE6MDQ6Mzkgw5ZTOzI0MDM="/>
+        <attribute name="edited" value="cmNyZHE7TUFVTUNIOzIwMjMtMTAtMjg7MTE6MTY6MTUgw5ZTOzI7MjUwOQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="A1 basla&#13;&#10;A2 oku n,ps,m&#13;&#10;A3 eger ps&lt;10 &amp;&amp; ps &gt;0 ,m=n+5000*ps&#13;&#10;A4  deg&#305;lse eger ps&gt;=10 &amp;&amp; ps&lt;30 , m=n+8000*ps&#13;&#10;A5   deg&#305;lse ps&gt;30, m=n+12000*ps&#13;&#10;A6 yaz m&#13;&#10;A7 b&#305;t&#305;r&#13;&#10;A7"/>
+            <declare name="n, ps, m" type="Integer" array="False" size=""/>
+            <output expression="&quot;maas?&quot;" newline="True"/>
+            <input variable="n"/>
+            <output expression="&quot;parcasay&#305;s&#305;?&quot;" newline="True"/>
+            <input variable="ps"/>
+            <if expression="ps&lt;10 &amp;&amp; ps&gt;0">
+                <then>
+                    <assign variable="m" expression="n+5000*ps"/>
+                    <output expression="m" newline="True"/>
+                </then>
+                <else>
+                    <if expression="ps&gt;=10 &amp;&amp; ps&lt;30">
+                        <then>
+                            <assign variable="m" expression="n+8000*ps"/>
+                            <output expression="m" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="ps&gt;=30">
+                                <then>
+                                    <assign variable="m" expression="n+12000*ps"/>
+                                    <output expression="m" newline="True"/>
+                                </then>
+                                <else/>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

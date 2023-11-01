@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="rcrdq"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-30 11:32:09 &#214;&#214;"/>
+        <attribute name="created" value="cmNyZHE7TUFVTUNIOzIwMjMtMTAtMzA7MDk6NTQ6MDYgw5bDljsyNTMz"/>
+        <attribute name="edited" value="cmNyZHE7TUFVTUNIOzIwMjMtMTAtMzA7MTE6MzI6MDkgw5bDljs0OzI2MzY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="A1 basla&#13;&#10;A2 say&#305;=0&#13;&#10;A3 toplam =0&#13;&#10;A4 say&#305;&gt;=1 &amp;&amp; say&#305;&lt; =37&#13;&#10;A5 toplam=toplam+say&#305;&#13;&#10;A5 don A4&#13;&#10;A6 yaz toplam&#13;&#10;A7 b&#305;t&#305;r"/>
+            <declare name="say&#305;, toplam" type="Integer" array="False" size=""/>
+            <assign variable="say&#305;" expression="0"/>
+            <assign variable="toplam" expression="0"/>
+            <for variable="say&#305;" start="1" end="37" direction="inc" step="2">
+                <assign variable="toplam" expression="toplam+say&#305;"/>
+                <output expression="toplam" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
